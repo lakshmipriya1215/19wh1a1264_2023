@@ -1,0 +1,44 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+	int num,i,j;
+	cin>>num;
+	for(i = 1 ; i <= num ; i++)
+	{
+		j =1;
+		if(i % 2 == 1){
+			while(j != i){
+			cout<<" ";
+			j++;
+			}
+		for(j = i ; j <= (2 * num-i) ; j++)
+		{
+			if(j % 2 == 1)
+			cout<<"*";
+			else
+			cout<<" ";
+		}
+		cout<<"\n";
+		}
+		else if(i % 2 == 0)
+		{
+			j =1;
+			while(j != i)
+			{
+				cout<<" ";
+				j++;
+			}
+			for(j = i ; j <= (2 * num - i) ; j++)
+			{
+				if(j % 2 == 0)
+				cout<<"*";
+				else
+				cout<<" ";
+			}
+			cout<<"\n";
+		}
+	}
+	// your code goes here
+	return 0;
+}
