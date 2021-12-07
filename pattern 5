@@ -1,0 +1,59 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+	int num,i,j,m,n;
+	cin>>num;
+	for(j = 1 ; j <= (2*num -1) ; j++)
+	{
+		if(j == (((2 *num -1)/2) + 1)){
+		cout<<"*";
+		break;
+		}
+		else
+		cout<<" ";
+	}
+	cout<<"\n";
+	m = n = j;
+	for(i = 2 ; i <= (2*num -1)/2 +1 ; i++)
+	{
+		m = m - 1 ;
+		n = n + 1;
+		for(j = 1 ; j <= (2 *num -1) ; j++)
+		{
+			if(m == j)
+			cout<<"*";
+			else if(n == j)
+			cout<<"*";
+			else
+			cout<<" ";
+		}
+		cout<<"\n";
+	}
+	for(i = 3 ; i <= (2*num -1)/2 +1 ; i++)
+	{
+		m = m + 1 ;
+		n = n - 1;
+		for(j = 1 ; j <= (2 *num -1) ; j++)
+		{
+			if(m == j)
+			cout<<"*";
+			else if(n == j)
+			cout<<"*";
+			else
+			cout<<" ";
+		}
+		cout<<"\n";
+	}
+	for(j = 1 ; j <= (2*num -1) ; j++)
+	{
+		if(j == (((2 *num -1)/2) + 1)){
+		cout<<"*";
+		break;
+		}
+		else
+		cout<<" ";
+	}
+	// your code goes here
+	return 0;
+}
