@@ -1,0 +1,60 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+	int n,temp;
+	cin>>n;
+	temp = n;
+	int i,j = n;
+	while(j--)
+	cout<<"-";
+	cout<<"\n";
+	if(n > 3){
+	for(i = 2 ; i < n ; i++)
+	{
+		if(i == (n/2 +1))
+		{
+			j = n;
+			while(j--)
+			cout<<"*";
+		}
+		else
+		{
+			for(j = 1 ; j < n ; j++)
+			{
+				if(j == 1)
+				cout<<"*";
+				if(j == n-1)
+				cout<<"*";
+				else
+				cout<<" ";
+			}
+		}
+		cout<<"\n";
+	}
+	}
+	else
+	{
+		n = n - 2;
+		while(n--)
+		{
+			for(j = 1 ; j < temp ; j++)
+			{
+				if(j == 1)
+				cout<<"*";
+				else if( j == temp-1)
+				cout<<"*";
+				else
+				cout<<" ";
+			}
+			cout<<"\n";
+		}
+	}
+	j = temp;
+	while(j--)
+	cout<<"-";
+	cout<<"\n";
+	
+	// your code goes here
+	return 0;
+}
